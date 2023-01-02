@@ -3,7 +3,6 @@ import './App.css';
 import { Component } from 'react';
 import TodoInsert from './components/TodoInsert.js';
 import TodoList from './components/TodoList.js';
-import Clockcmp from './components/Clockcmp.js';
 
 
 class App extends Component{
@@ -74,7 +73,6 @@ class App extends Component{
     return (
       <div className='App'>
         <div className='container'>
-          <Clockcmp/>
           <TodoInsert onInsert={this.onInsert} />
           <TodoList todoList={todoList}
                     deleteTodo={this.deleteTodo}

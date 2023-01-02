@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
+
 function Clockcmp() {
-  const [time, setTime] = useState(moment());
+  const [time, setTime] = useState();
   useEffect(() => {
    const timer = setInterval(() => {
-      setTime(moment());
+      setTime();
     }, 1000);
     return () => {
       clearInterval(timer);
